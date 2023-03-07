@@ -12,6 +12,16 @@ public class RemoveAllCharacter {
      * @return str, without any characters of type ch.
      */
     public String removeAll(String str, String ch){
-        return null;
+        // return str.replace(ch, "");
+        // return str.replaceAll(ch, "");
+        // for loop
+        String remove = "";
+        for(int i = 0; i< str.length(); i++){
+            char c =str.charAt(i);
+            if (c != ch.charAt(0)){
+                remove += c;
+            }
+        }
+        return remove;
     }
 }
